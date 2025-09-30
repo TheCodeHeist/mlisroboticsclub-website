@@ -43,7 +43,7 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-:root {
+/* :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -110,6 +110,61 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+} */
+
+:root {
+  --background: hsl(172.5 24.53% 95.52%);
+  --foreground: hsl(64 51% 5%);
+  --muted: hsl(166.15 27.73% 88.29%);
+  --muted-foreground: hsl(176.61 17.25% 32.8%);
+  --popover: hsl(64 45% 98%);
+  --popover-foreground: hsl(64 51% 5%);
+  --card: hsl(64 45% 98%);
+  --card-foreground: hsl(64 51% 5%);
+  --border: hsl(165.32 23.05% 84.01%);
+  --input: hsl(163.06 22.33% 81.38%);
+  --primary: hsl(176 61% 19%);
+  --primary-foreground: hsl(166 76% 97%);
+  --secondary: hsl(174.67 83.85% 31.57%);
+  --secondary-foreground: hsl(166.15 76.47% 96.67%);
+  --accent: hsl(149.27 10.63% 84.08%);
+  --accent-foreground: hsl(175.93 60.82% 19.02%);
+  --destructive: hsl(7.89 83.73% 40.98%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --ring: hsl(165.32 24.95% 19.58%);
+  --chart-1: hsl(176 61% 19%);
+  --chart-2: hsl(174.67 83.85% 31.57%);
+  --chart-3: hsl(149.27 10.63% 84.08%);
+  --chart-4: hsl(174.67 83.85% 34.57%);
+  --chart-5: hsl(176 64% 19%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(183.39 44.74% 5.42%);
+  --foreground: hsl(64 36% 97%);
+  --muted: hsl(184 36% 14%);
+  --muted-foreground: hsl(184 18.28% 67.99%);
+  --popover: hsl(180 44.44% 3.53%);
+  --popover-foreground: hsl(64 36% 97%);
+  --card: hsl(178.87 42.04% 3.57%);
+  --card-foreground: hsl(64 36% 97%);
+  --border: hsl(171.43 19.39% 16.36%);
+  --input: hsl(171.43 21.94% 12.99%);
+  --primary: hsl(175.34 77.44% 26.08%);
+  --primary-foreground: hsl(166.15 76.47% 96.67%);
+  --secondary: hsl(173.41 80.39% 40%);
+  --secondary-foreground: hsl(166.15 0% 100%);
+  --accent: hsl(168.39 24.59% 43.22%);
+  --accent-foreground: hsl(175.34 30.13% 86.79%);
+  --destructive: hsl(345.35 82.69% 40.78%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --ring: hsl(168.39 83.78% 78.24%);
+  --chart-1: hsl(175.34 77.44% 26.08%);
+  --chart-2: hsl(173.41 80.39% 40%);
+  --chart-3: hsl(168.39 24.59% 43.22%);
+  --chart-4: hsl(173.41 80.39% 43%);
+  --chart-5: hsl(175.34 80.44% 26.08%);
 }
 
 @layer base {
