@@ -37,7 +37,8 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: "MLIS Robotics Club",
-  description: "MLIS Robotics Club landing page",
+  description:
+    "Meet MLIS Robotics Club, Where Innovation Starts From Young Minds...",
 };
 
 export default function RootLayout({
