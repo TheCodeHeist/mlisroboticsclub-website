@@ -1,35 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import * as motion from "motion/react-client";
+import content from "@/www/content";
 
 export function Members() {
-  const members = [
-    {
-      name: "Nusaiba Nazahat Chisty",
-      role: "President",
-      specialty: "Machine Learning & AI",
-      image: "/members/nusaiba.jpg",
-    },
-    {
-      name: "Md Riyasat Hossain",
-      role: "Vice President",
-      specialty: "Software Engineering",
-      image: "/members/riyasat.jpg",
-    },
-    {
-      name: "Imtiaz Khan",
-      role: "General Secretary",
-      specialty: "Technical Specialist",
-      image: "/members/imtiaz.jpg",
-    },
-    {
-      name: "Ahnaf Juhayer Rahman",
-      role: "Treasurer",
-      specialty: "Graphics Designing",
-      image: "/members/juhayer.jpg",
-    },
-  ];
-
   return (
     <section className="py-24 bg-background flex items-center justify-center">
       <div className="container px-4">
@@ -49,7 +23,7 @@ export function Members() {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {members.map((member, index) => (
+          {content.teamInfo.map((member, index) => (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

@@ -2,59 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Clock } from "lucide-react";
 import * as motion from "motion/react-client";
+import content from "@/www/content";
 
 export function Events() {
-  const events = [
-    {
-      title: "Regional Robotics Competition",
-      date: "March 15, 2025",
-      time: "9:00 AM - 5:00 PM",
-      location: "City Convention Center",
-      type: "Competition",
-      status: "Upcoming",
-    },
-    {
-      title: "Weekly Build Session",
-      date: "Every Thursday",
-      time: "3:30 PM - 5:30 PM",
-      location: "MLIS Robotics Lab",
-      type: "Workshop",
-      status: "Recurring",
-    },
-    {
-      title: "Intro to Arduino Workshop",
-      date: "February 20, 2025",
-      time: "4:00 PM - 6:00 PM",
-      location: "Computer Lab B",
-      type: "Workshop",
-      status: "Upcoming",
-    },
-    {
-      title: "State Championship Finals",
-      date: "January 28, 2025",
-      time: "All Day",
-      location: "State University Arena",
-      type: "Competition",
-      status: "Past",
-    },
-    {
-      title: "Guest Speaker: Industry Robotics",
-      date: "March 5, 2025",
-      time: "3:30 PM - 4:30 PM",
-      location: "School Auditorium",
-      type: "Seminar",
-      status: "Upcoming",
-    },
-    {
-      title: "Fall Kickoff Meeting",
-      date: "September 10, 2024",
-      time: "3:30 PM - 5:00 PM",
-      location: "MLIS Robotics Lab",
-      type: "Meeting",
-      status: "Past",
-    },
-  ];
-
   const getStatusColor = (status: string) => {
     switch (status) {
       case "Upcoming":
@@ -92,7 +42,7 @@ export function Events() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {events.map((event, index) => (
+          {content.events.map((event, index) => (
             <motion.div
               key={index}
               initial={{ scale: 1 }}

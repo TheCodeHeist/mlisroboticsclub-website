@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Zap, Cpu } from "lucide-react";
 import Image from "next/image";
 import * as motion from "motion/react-client";
+import content from "@/www/content";
 
 export function Hero() {
   return (
@@ -26,7 +27,7 @@ export function Hero() {
               <Image
                 width={602}
                 height={602}
-                src="/rbclogo.png"
+                src={content.logoSrc}
                 alt="MLIS Robotics Club Logo"
                 className="w-32 h-32"
               />
@@ -47,11 +48,10 @@ export function Hero() {
             }}
           >
             <h1 className="font-sans text-5xl md:text-7xl font-bold tracking-tight text-balance">
-              MLIS Robotics Club
+              {content.title}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-balance leading-relaxed">
-              Building the future through innovation, collaboration, and
-              cutting-edge robotics technology
+              {content.description}
             </p>
           </motion.div>
 
@@ -84,7 +84,7 @@ export function Hero() {
           >
             <div className="space-y-2">
               <div className="text-3xl md:text-4xl font-bold text-primary">
-                50+
+                {content.stats.members}+
               </div>
               <div className="text-sm text-muted-foreground">
                 Active Members
@@ -92,7 +92,7 @@ export function Hero() {
             </div>
             <div className="space-y-2">
               <div className="text-3xl md:text-4xl font-bold text-primary">
-                12
+                {content.stats.competitionsWon}
               </div>
               <div className="text-sm text-muted-foreground">
                 Competitions Won
@@ -100,7 +100,7 @@ export function Hero() {
             </div>
             <div className="space-y-2">
               <div className="text-3xl md:text-4xl font-bold text-primary">
-                25+
+                {content.stats.projectsBuilt}
               </div>
               <div className="text-sm text-muted-foreground">
                 Projects Built
